@@ -1,0 +1,19 @@
+target := Hello 
+CC := gcc
+object = Hello.o
+Hello : $(object)
+	$(CC) -o Hello $(object)
+
+
+	
+.PHONY : clean
+	clean :
+			-rm Hello $(object)
+
+.PHONY : install 
+
+.PHONY : print  
+
+.PHONY : tar 
+
+
